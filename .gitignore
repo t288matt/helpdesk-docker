@@ -18,3 +18,9 @@ stage
 include/mpdf/ttfontdata
 include/mpdf/tmp
 nbproject/
+
+# Ignore deployment web directory
+public/
+
+# Ignore code editor specifc files
+.idea/*

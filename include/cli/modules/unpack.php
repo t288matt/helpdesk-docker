@@ -189,6 +189,8 @@ class Unpacker extends Module {
                     continue;
                 elseif ($this->exclude($exclude, $dir))
                     continue;
+                elseif ($destination === dirname($folder).'/'.basename($dir).'/')
+                    continue;
                 $this->unpackage(
                     dirname($folder).'/'.basename($dir).'/'.basename($folder),
                     $destination.basename($dir),

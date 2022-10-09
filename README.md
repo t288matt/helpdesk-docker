@@ -1,3 +1,23 @@
+Helpdesk - VATSIM UK
+ ====================
+
+  Atomic Deployment
+ -----------------
+
+  We currently deploy within the repository to the public directory. Due to issues
+ with the current management script (manage.php) from the upstream repo, we do
+ not deploy over the top of the existing files.
+
+  ```bash
+ git pull && \
+ php manage.php deploy -v public_new && \
+ mv public public_old && \
+ mv public_new public && \
+ rm -rf public_old
+ ```
+
+  _The below section is from the upstream osTicket repository:_
+  
 osTicket
 ========
 <a href="https://osticket.com"><img height="80px" width="80px" src="images/favicon.png"
