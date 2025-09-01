@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  helpdesk:
+    build: .
+    ports:
+      - "80:80"
+      - "3306:3306"
+    volumes:
+      - ../uploads:/var/www/html/uploads
+      - ../logs:/var/www/html/logs
+      - ../mysql_data:/var/lib/mysql
+    environment:
+      - DB_HOST=localhost
+      - DB_NAME=helpdesk
+      - DB_USER=helpdesk
+      - DB_PASS=helpdesk123
+    restart: unless-stopped
+
+volumes:
+  mysql_data:

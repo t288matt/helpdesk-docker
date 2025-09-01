@@ -1,0 +1,41 @@
+# Git and version control
+.git
+.gitignore
+
+# Documentation
+README.md
+LICENSE.txt
+UPGRADING.txt
+WHATSNEW.md
+ISSUE_TEMPLATE.md
+SECURITY.md
+
+# Docker files
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+# Data directories
+mysql_data/
+uploads/
+logs/
+
+# Setup and installation
+setup/
+scp/
+
+# Development and test files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-*
+
+# OS generated files
+.DS_Store
+Thumbs.db
