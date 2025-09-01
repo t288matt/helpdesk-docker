@@ -37,3 +37,7 @@ docker-compose -f docker/docker-compose.yml logs
 - `../uploads/` - File uploads and attachments
 - `../logs/` - Application logs
 - `../mysql_data/` - Database files
+
+## GitHub Actions
+
+This repository automatically builds Docker images on push to main/master branches.
