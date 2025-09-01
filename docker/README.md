@@ -4,7 +4,7 @@ This directory contains the Docker configuration for the VATPAC Helpdesk.
 
 ## Files
 
-- `Dockerfile` - Container definition with PHP 8.0, Apache, and MariaDB
+- `Dockerfile` - Container definition with PHP 8.0, Apache, and MariaDB.
 - `docker-compose.yml` - Service orchestration and volume mounts
 - `docker-entrypoint.sh` - Startup script for database and web server
 - `.dockerignore` - Files to exclude from Docker build context
