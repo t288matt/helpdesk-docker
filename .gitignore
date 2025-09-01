@@ -24,3 +24,8 @@ public/
 
 # Ignore code editor specifc files
 .idea/*
+
+# Ignore data directories
+mysql_data/
+uploads/
+logs/
